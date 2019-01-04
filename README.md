@@ -14,3 +14,23 @@ Sendo um RPG por turnos, cada personagem participante executa uma ação em seu 
 Esta ação pode ser um ataque, o uso de algum item ou até mesmo uma pergunta ou resposta dentro de uma conversa. Com diversas 
 condições e regras de jogo, para um maior aprofundamento o enunciado completo esta disponivel no link a seguir: [ENUNCIADO](https://github.com/TulioHenrique/RPG-por-Turnos/blob/master/Docs/Enunciado%20TI_POO.pdf)
 
+## Prints do Projeto
+
+Intro
+
+
+Selecionando Lutadores
+
+
+Combate
+
+
+## Autores
+
+* **Túlio Henrique** - *Idealização, criação do FRONT-END e apoio completo na aplicação* - [GITHUB](https://github.com/TulioHenrique)
+
+* **Emerson henrique** - *Idealização do projeto, Criação do BACK-END e apoio completo na aplicação* - [GITHUB](https://github.com/)
+
+## License
+
+Este projeto pode ser utilizado por qualquer usuario da rede GITHUB, entretanto solicitamos a devida referência no trabalho.
