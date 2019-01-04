@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{629C38E9-CFB9-453B-9A11-EAE59E9A994D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPG</RootNamespace>
+    <AssemblyName>RPG</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Enum.cs" />
+    <Compile Include="Class\Item\Armas\Besta.cs" />
+    <Compile Include="Class\Item\Armas\Cajado.cs" />
+    <Compile Include="Class\Item\Armas\EsferadeAtaque.cs" />
+    <Compile Include="Class\Item\Armas\EspadaBarroca.cs" />
+    <Compile Include="Class\Item\Armas\GarraLetal.cs" />
+    <Compile Include="Class\Item\Armas\Porrete.cs" />
+    <Compile Include="Class\Item\Armas\TridenteSagrado.cs" />
+    <Compile Include="Class\Item\Magia.cs" />
+    <Compile Include="Class\Item\Magias\Bio.cs" />
+    <Compile Include="Class\Item\Magias\FlamaGelada.cs" />
+    <Compile Include="Class\Item\Magias\Intoxicacao.cs" />
+    <Compile Include="Class\Item\Magias\MagiaCura.cs" />
+    <Compile Include="Class\Item\Magias\HalitoDeFogo.cs" />
+    <Compile Include="Class\Item\Magias\PorcaodaVida.cs" />
+    <Compile Include="Class\Inumeno\Animal.cs" />
+    <Compile Include="Class\Item\Arma.cs" />
+    <Compile Include="Class\Inumeno\Dragao.cs" />
+    <Compile Include="Class\Humano\Gerreiro.cs" />
+    <Compile Include="Class\Humano\Humano.cs" />
+    <Compile Include="Class\Inumeno\Inumano.cs" />
+    <Compile Include="Class\Item\Item.cs" />
+    <Compile Include="Class\Item\Magias\Tempestade.cs" />
+    <Compile Include="Class\Jogador.cs" />
+    <Compile Include="Class\Humano\Ladrão.cs" />
+    <Compile Include="Class\Humano\Mago.cs" />
+    <Compile Include="Class\Humano\Paladino.cs" />
+    <Compile Include="Class\Personagem.cs" />
+    <Compile Include="Class\Inumeno\Troll.cs" />
+    <Compile Include="Class\Inumeno\Zumbi.cs" />
+    <Compile Include="Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCombate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCombate.Designer.cs">
+      <DependentUpon>FrmCombate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrecombate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrecombate.Designer.cs">
+      <DependentUpon>frmPrecombate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelPersonagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelPersonagem.Designer.cs">
+      <DependentUpon>FrmSelPersonagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Jogo.cs" />
+    <Compile Include="FrmTerminaLuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTerminaLuta.Designer.cs">
+      <DependentUpon>FrmTerminaLuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOpcoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOpcoes.Designer.cs">
+      <DependentUpon>FrmOpcoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCombate.resx">
+      <DependentUpon>FrmCombate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrecombate.resx">
+      <DependentUpon>frmPrecombate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelPersonagem.resx">
+      <DependentUpon>FrmSelPersonagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTerminaLuta.resx">
+      <DependentUpon>FrmTerminaLuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Imagens\FtoAnimal.jpg" />
+    <Content Include="Imagens\FtoDragao.jpg" />
+    <Content Include="Imagens\FtoGuerreiro.jpg" />
+    <Content Include="Imagens\FtoLadrao.jpg" />
+    <Content Include="Imagens\FtoMago.jpg" />
+    <Content Include="Imagens\FtoPaladino.jpg" />
+    <Content Include="Imagens\FtoTroll.jpg" />
+    <Content Include="Imagens\FtoZumbi.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
